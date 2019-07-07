@@ -16,7 +16,7 @@ export default class DropArea extends React.Component<IProps, IState>{
         super(props)
         this.state = {
             dropzone: this.onDrop.bind(this),
-            imageFiles: [],
+            imageFiles: [], 
         }
     }
 
@@ -64,6 +64,7 @@ export default class DropArea extends React.Component<IProps, IState>{
                 }
             })
     }
+
     public render() {
         return (
             <div className="cont">

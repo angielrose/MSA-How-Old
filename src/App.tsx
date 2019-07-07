@@ -1,7 +1,8 @@
 import * as React from 'react';
-import DropArea from './Components/DropArea/DropArea'
-import Header from './Components/Header/Header'
-import Result from './Components/Result/Result'
+import DropArea from './components/DropArea/DropArea'
+import Header from './components/Header/Header'
+import Result from './components/Result/Result'
+
 
 interface IState {
   result:string
@@ -9,17 +10,18 @@ interface IState {
 }
 
 class App extends React.Component<{},IState>{
-  public constructor(props:any){
-    super(props)
-    this.state = {
-      filelength:0,
-      result:"",
+    public constructor(props:any){
+      super(props)
+      this.state = {
+        filelength:0,
+        result:"",
+      }
     }
-  }
 
-  public resultstate = (resultString:string,filelen:any) => {
-    this.setState({result:resultString,filelength:filelen})
-  }
+    public resultstate = (resultString:string,filelen:any) => {
+      this.setState({result:resultString,filelength:filelen})
+    }
+
 
   public render() {
     return (
